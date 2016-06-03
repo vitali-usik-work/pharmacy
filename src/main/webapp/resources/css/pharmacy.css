@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+* {padding:0; margin:0;}
+img {border:0 none;}
+div {display:block; position:relative;}
+ul {list-style: none;}
+
+.clr::after {content: ' '; display: table; width: 100%; clear: both; color: transparent; font-size: 0px; line-height: 0px;}
+
+html {position: relative; min-height: 100%;}
+body {background: #f4f4f4; font-family: Arial, sans-serif;}
+
+/* remove outlines */
+a:focus, input:focus, select:focus, textarea:focus, button:focus {outline: none;}
+
+/* container which includes header and content part, except footer */
+.container_wrapper {background: #f4f4f4; height: 100%;} /* margin-bottom size value equals footer height value margin-bottom: 95px; */
+
+/* wrapper for header */
+.header_wrapper {background: #46cdd6;}
+header {width: 1200px; height: 140px; margin: auto; overflow: hidden; background: #46cdd6;}
+.header-logo {float: left; margin-top: 20px;}
+.header-logo > a {width: 180px; height: 85px; background: url(../media/pharmacy-logo.png) 0 0 no-repeat; background-size: 180px 85px; padding: 0 0 85px 180px;}
+nav {float: right; width: 900px; text-align: right;}
+nav > ul {margin-top: 60px;}
+nav > ul > li {display: inline-block; width: 100px; text-align: center; text-transform: uppercase;}
+nav > ul > li > a {text-decoration: none;  color: #fff; font-size: 20px; line-height: 20px;}
+nav > ul > li > a:hover {text-decoration: underline;}
+
+/* wrapper for content */
+.content_wrapper {background: #f4f4f4;}
+.content {width: 1200px; margin: auto;}
+
+/* wrapper for footer */
+.footer_wrapper {background: #46cdd6; position: absolute; bottom: 0; width: 100%; height: 95px;}
+footer {width: 1200px; height: 95px; margin: auto; overflow: hidden; background: #46cdd6;}
+.footer-logo {float: left; margin-top: 20px;}
+.footer-logo > a {width: 90px; height: 41px; background: url(../media/pharmacy-logo.png) 0 0 no-repeat; background-size: 90px 41px; padding: 0 0 41px 90px;}
+.footer-nav {float: right; width: 900px; text-align: right;}
+.footer-nav > ul {margin-top: 40px;}
+.footer-nav > ul > li {display: inline-block; width: 70px; text-align: center; text-transform: uppercase;}
+.footer-nav > ul > li > a {text-decoration: none;  color: #fff; font-size: 15px; line-height: 15px;}
+.footer-nav > ul > li > a:hover {text-decoration: underline;}
