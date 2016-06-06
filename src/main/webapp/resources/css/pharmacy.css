@@ -14,7 +14,7 @@ body {background: #f4f4f4; font-family: Arial, sans-serif;}
 a:focus, input:focus, select:focus, textarea:focus, button:focus {outline: none;}
 
 /* container which includes header and content part, except footer */
-.container_wrapper {background: #f4f4f4; height: 100%;} /* margin-bottom size value equals footer height value margin-bottom: 95px; */
+.container_wrapper {background: #f4f4f4;  margin-bottom: 95px;} /* margin-bottom size value equals footer height value  height: 100%;*/
 
 /* wrapper for header */
 .header_wrapper {background: #46cdd6;}
@@ -23,7 +23,7 @@ header {width: 1200px; height: 140px; margin: auto; overflow: hidden; background
 .header-logo > a {width: 180px; height: 85px; background: url(../media/pharmacy-logo.png) 0 0 no-repeat; background-size: 180px 85px; padding: 0 0 85px 180px;}
 nav {float: right; width: 900px; text-align: right;}
 nav > ul {margin-top: 60px;}
-nav > ul > li {display: inline-block; width: 100px; text-align: center; text-transform: uppercase;}
+nav > ul > li {display: inline-block; width: 110px; text-align: center; text-transform: uppercase;}
 nav > ul > li > a {text-decoration: none;  color: #fff; font-size: 20px; line-height: 20px;}
 nav > ul > li > a:hover {text-decoration: underline;}
 
@@ -38,6 +38,55 @@ footer {width: 1200px; height: 95px; margin: auto; overflow: hidden; background:
 .footer-logo > a {width: 90px; height: 41px; background: url(../media/pharmacy-logo.png) 0 0 no-repeat; background-size: 90px 41px; padding: 0 0 41px 90px;}
 .footer-nav {float: right; width: 900px; text-align: right;}
 .footer-nav > ul {margin-top: 40px;}
-.footer-nav > ul > li {display: inline-block; width: 70px; text-align: center; text-transform: uppercase;}
+.footer-nav > ul > li {display: inline-block; width: 80px; text-align: center; text-transform: uppercase;}
 .footer-nav > ul > li > a {text-decoration: none;  color: #fff; font-size: 15px; line-height: 15px;}
 .footer-nav > ul > li > a:hover {text-decoration: underline;}
+
+
+.drugs_wrapper {overflow: hidden;}
+.drug_item {display: block; position: relative; float: left; width: 300px; height: 350px; margin: 20px 50px;}
+.drug_item > h3 {font-size: 18px; line-height: 24px; text-transform: uppercase; margin: 7px 0;}
+.drug_item > h3 > a {color: #46cdd6; text-decoration: none;}
+.drug_item > h3 > a:hover {text-decoration: underline;}
+.drug_item_img {width: 300px; height: 220px; overflow: hidden;}
+.drug_item_img > img {max-width: 300px;}
+.drug_item > p {font-size: 16px; line-height: 20px;}
+.drug_item > p > b {font-size: 16px; font-weight: bold;}
+
+.contacts {display: block; position: relative; width: 900px; margin: 30px auto;}
+.contacts > h2 {text-transform: uppercase; text-align: center;}
+.contacts > p {margin: 20px; font-size: 20px;}
+.contacts > ul {margin: 20px;}
+.contacts > ul > li {font-size: 20px;}
+
+.drug_page {display: block; position: relative; width: 900px; margin: 30px auto;}
+.drug_page > h3 {font-size: 18px; line-height: 24px; text-transform: uppercase; margin: 7px 0; text-align: center;}
+.drug_page_img {max-width: 500px; margin: 20px;}
+.drug_page_img > img {max-width: 500px;}
+.drug_page > p {font-size: 18px; line-height: 20px; margin: 20px;}
+.drug_page > p > b {font-size: 18px; font-weight: bold;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

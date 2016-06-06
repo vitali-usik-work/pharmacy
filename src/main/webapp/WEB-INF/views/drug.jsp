@@ -18,19 +18,20 @@
   </div>
   <div class="content_wrapper">
     <div class="content">
+      
       <div class="drugs_wrapper">
-        <c:if test="${!empty drugs}">
-          <c:forEach items="${drugs}" var="drug">
-            <div class="drug_item">
-              <h3><a href="${pageContext.request.contextPath}/drug/${drug.id}">${drug.name }</a></h3>
-              <div class="drug_item_img">
-                <img src="${drug.drugImg }">
-              </div>
-              <p><b>Производитель:</b> ${drug.producer }, ${drug.country }</p>
-              <p><b>Дозировка:</b> ${drug.dosage }</p>
-              <p><b>Тип:</b> ${drug.type }</p>
+        <c:if test="${!empty drug}">
+          <div class="drug_page">
+            <h3>${drug.name }</h3>
+            <div class="drug_page_img">
+              <img src="${drug.drugImg }">
             </div>
-          </c:forEach>
+            <p>${drug.desc }</p>
+            <p><b>Производитель:</b> ${drug.producer }, ${drug.country }</p>
+            <p><b>Дозировка:</b> ${drug.dosage }</p>
+            <p>Продается <b>${drug.isPrescription }</b></p>
+            <p><b>Тип:</b> ${drug.type }</p>
+          </div>
         </c:if>
       </div>
      

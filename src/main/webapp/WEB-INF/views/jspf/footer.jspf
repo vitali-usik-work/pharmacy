@@ -6,11 +6,8 @@
   </div>
   <div class="footer-nav">
     <ul>
-      <li><a href="#">ссылка</a></li>
-      <li><a href="#">ссылка</a></li>
-      <li><a href="#">ссылка</a></li>
-      <li><a href="#">ссылка</a></li>
-      <li><a href="#">ссылка</a></li>
+      <li><a href="${pageContext.request.contextPath}">главная</a></li>
+      <li><a href="${pageContext.request.contextPath}/contact">контакты</a></li>
     </ul>
   </div>
 </footer>
