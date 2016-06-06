@@ -8,11 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import pharmacy.entity.Drug;
 import pharmacy.service.DrugService;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.Map;
 
-/**
- * Created by v.usik on 6/3/2016.
- */
 @Controller
 public class HomeController {
 
@@ -20,10 +19,11 @@ public class HomeController {
   public DrugService drugService;
 
   @RequestMapping("/")
-  public String homePage(Map<String, Object> map) {
+  public String homePage(Map<String, Object> map, HttpServletRequest request) {
+//    HttpSession session = request.getSession();
+//    session.setAttribute("user", "ololo");
     map.put("hello", "Hello World!");
     map.put("drugs", drugService.listDrugs());
-    System.out.println("Hello World!");
     return "home";
   }
   
@@ -37,7 +37,6 @@ public class HomeController {
   @RequestMapping("/contact")
   public String contactPage(Map<String, Object> map) {
     //map.put("drugs", drugService.listDrugs());
-    System.out.println("contact");
     return "contact";
   }
 }

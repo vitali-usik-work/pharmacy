@@ -66,6 +66,18 @@ footer {width: 1200px; height: 95px; margin: auto; overflow: hidden; background:
 .drug_page > p {font-size: 18px; line-height: 20px; margin: 20px;}
 .drug_page > p > b {font-size: 18px; font-weight: bold;}
 
+.login_wrapper {display: block; position: relative; width: 900px; margin: 30px auto;}
+.login_wrapper > h2 {font-size: 18px; line-height: 24px; text-transform: uppercase; margin: 7px 0; text-align: center;}
+.login_wrapper > form {width: 600px; margin: 0 auto;}
+.login_form_error {color: red; text-align: center;}
+.form_field {display: block; position: relative; overflow: hidden; width: 900px; margin: 10px auto;}
+.form_field input[type=submit] {margin-left: 220px; border: 1px solid #005F7F; width: 321px; height: 40px; background: #46cdd6; text-transform: uppercase; font-size: 20px; cursor: pointer;}
+.form_name {display: block; position: relative; float: left; width: 230px; text-align: right; margin-right: 20px;}
+.form_name > p {font-size: 20px; line-height: 40px; text-transform: uppercase; color: #484545;}
+.form_input {display: block; position: relative; float: left; width: 350px;}
+.form_input input {height: 40px; width: 300px; border: 1px solid #46cdd6; padding: 0 10px; font-size: 20px;}
+.form_input select {height: 40px; width: 150px; border: 1px solid #46cdd6; border-radius: 5px; padding: 0 10px; font-size: 20px; cursor: pointer;}
+
 
 
 

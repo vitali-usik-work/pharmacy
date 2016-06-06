@@ -10,8 +10,7 @@ import javax.persistence.Table;
 @Table(name = "DRUG")
 public class Drug {
 
-  public Drug(){
-    System.out.println("entity");
+  public Drug(){;
   }
   
   @Id
