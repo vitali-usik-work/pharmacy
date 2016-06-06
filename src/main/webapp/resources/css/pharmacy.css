@@ -65,6 +65,7 @@ footer {width: 1200px; height: 95px; margin: auto; overflow: hidden; background:
 .drug_page_img > img {max-width: 500px;}
 .drug_page > p {font-size: 18px; line-height: 20px; margin: 20px;}
 .drug_page > p > b {font-size: 18px; font-weight: bold;}
+.drug_page > p > a {padding: 5px 20px; border: 1px solid #005F7F; border-radius: 3px; background: #46cdd6; color: #484545; text-decoration: none; cursor: pointer;}
 
 .login_wrapper {display: block; position: relative; width: 900px; margin: 30px auto;}
 .login_wrapper > h2 {font-size: 18px; line-height: 24px; text-transform: uppercase; margin: 7px 0; text-align: center;}

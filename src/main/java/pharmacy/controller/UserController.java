@@ -4,9 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import pharmacy.entity.User;
+import pharmacy.service.OrderService;
 import pharmacy.service.UserService;
 
 import javax.servlet.http.HttpServletRequest;
@@ -17,6 +19,9 @@ public class UserController {
 
     @Autowired
     public UserService userService;
+
+    @Autowired
+    public OrderService orderService;
 
     @RequestMapping(value = "/loginPage", method = RequestMethod.GET)
     public String loginPage() {
@@ -52,6 +57,19 @@ public class UserController {
         if (session != null) {
             session.invalidate();
         }
+
+        return "redirect:/";
+    }
+
+//    @RequestMapping("/admin/edit/{link}")
+//    public String editArticle(@PathVariable("link") String link, Map<String, Object> map) {
+    @RequestMapping(value = "/order/{drugId}")
+    public String makeOrder(@PathVariable("drugId") String drugId, HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        User currentUser = (User) session.getAttribute("user");
+        int userId = currentUser.getId();
+System.out.println("before service call");
+        orderService.saveOrder(userId, drugId);
 
         return "redirect:/";
     }

@@ -31,6 +31,7 @@
             <p><b>Дозировка:</b> ${drug.dosage }</p>
             <p>Продается <b>${drug.isPrescription }</b></p>
             <p><b>Тип:</b> ${drug.type }</p>
+            <p><a href="${pageContext.request.contextPath}/order/${drug.id}">Заказать</a></p>
           </div>
         </c:if>
       </div>

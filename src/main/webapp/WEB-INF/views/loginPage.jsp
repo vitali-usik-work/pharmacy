@@ -22,7 +22,6 @@
         <h2>Sign In</h2>
         <div class="login_form_error">${error}</div>
         <form class="login-form" action="${pageContext.request.contextPath}/login" commandName="user" method="post">
-          <%--<form:form method="post" action="${pageContext.request.contextPath}/admin/article/save" commandName="article" class="edit">--%>
 
           <div class="form_field">
             <div class="form_name">
